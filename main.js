@@ -1,4 +1,4 @@
-const API = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
+const API = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
 const productsItems = document.getElementById('products-items');
 const productsLength = document.getElementById('products-length');
 
@@ -40,7 +40,7 @@ const productTypes = (type) => {
 	if (type === undefined) {
 		getData(API);
 	} else {
-		let api = `http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=${type}`;
+		let api = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=${type}`;
 		getData(api);
 	}
 };
