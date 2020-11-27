@@ -46,7 +46,7 @@ const productTypes = (type) => {
 };
 
 const openModal = (product) => {
-	let api = `http://makeup-api.herokuapp.com/api/v1/products/${product}.json`;
+	let api = `https://makeup-api.herokuapp.com/api/v1/products/${product}.json`;
 	fetch(api)
 		.then((response) => response.json())
 		.then((resp) => {
