@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Maybelline cosmetics</title>
+	</head>
+	<body>
+		<main class="main">
+			<header class="header">
+				<h1 class="header__title">Maybelline Cosmetics</h1>
+			</header>
+			<div class="products">
+				<div class="products__types">
+					<button onclick="productTypes()">All</button>
+					<button onclick="productTypes('blush')">Blush</button>
+					<button onclick="productTypes('bronzer')">Bronzer</button>
+					<button onclick="productTypes('eyebrow')">Eyebrow</button>
+					<button onclick="productTypes('eyeliner')">Eyeliner</button>
+					<button onclick="productTypes('eyeshadow')">Eyeshadow</button>
+					<button onclick="productTypes('foundation')">Foundation</button>
+					<button onclick="productTypes('lip_liner')">Lip liner</button>
+					<button onclick="productTypes('lipstick')">Lipstick</button>
+					<button onclick="productTypes('mascara')">Mascara</button>
+					<button onclick="productTypes('nail_polish')">Nail polish</button>
+				</div>
+				<div id="products-length"></div>
+				<div id="products-items" class="products__items"></div>
+			</div>
+		</main>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="modal__info"></div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
